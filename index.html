@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outdoor Works | Landscaping & Handyman Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+    header { background: #22543d; color: #fff; padding: 1rem 2rem; }
+    nav ul { display: flex; list-style: none; justify-content: flex-end; gap: 1.5rem; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1000px; margin: auto; padding: 2rem; }
+    .hero { background: url('https://images.unsplash.com/photo-1611056551784-15e09fd4422c') center/cover no-repeat; padding: 6rem 2rem; color: white; text-shadow: 1px 1px 4px #000; text-align: center; }
+    .section-title { margin-top: 2rem; font-size: 2rem; color: #22543d; }
+    .services-list, .projects-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 150px; object-fit: cover; border-radius: 4px; margin-bottom: 0.5rem; }
+    footer { background: #2f855a; color: white; padding: 1rem; text-align: center; margin-top: 2rem; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background: #22543d; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Outdoor Works</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hardworking College Student Offering Outdoor Services</h2>
+    <p>Reliable help for landscaping, brush clearing, and outdoor transformations.</p>
+  </section>
+
+  <div class="container">
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <p>Outdoor Works is Cal Poly Student run. For those projects that have been staring at you for months or ones you've been hoping to start, give us a call. Simply point and tell us what you want done. We're here to cater to yoyur outdoor needs. Whether it's laying beautiful paver patios, spreading mulch for a fresh look, planting greenery, or clearing brush with skillful chainsaw work — we're here to help homeowners keep their outdoor space safe, beautiful, and functional.</p>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-list">
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/09/21/09/47/patio-5589735_1280.jpg" alt="Laying pavers">
+          <strong>Laying Pavers</strong><br/>Walkways, patios, edging, and more.
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2017/06/28/20/24/wood-chips-2457705_1280.jpg" alt="Spreading mulch">
+          <strong>Spreading Mulch</strong><br/>Freshen up beds and preserve soil.
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2016/04/17/17/44/gardening-1332614_1280.jpg" alt="Planting shrubs and flowers">
+          <strong>Planting</strong><br/>Shrubs, trees, flowers, and native drought-tolerant choices.
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2018/03/16/15/48/garden-3236634_1280.jpg" alt="Landscape transformation">
+          <strong>Landscape Transformations</strong><br/>Full-yard makeovers with function and curb appeal.
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2020/06/25/14/31/forest-5340440_1280.jpg" alt="Brush clearing">
+          <strong>Brush Clearing</strong><br/>Fire-safe and accessible land with chainsaw clearing.
+        </div>
+        <div class="card">
+          <img src="https://cdn.pixabay.com/photo/2016/07/27/22/03/garden-1546919_1280.jpg" alt="Outdoor repairs">
+          <strong>General Outdoor Help</strong><br/>Fence repair, gate adjustment, cleanups, and more.
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Previous Projects</h2>
+      <div class="projects-list">
+        <div class="card">Before & after: paver walkway construction with firepit circle.</div>
+        <div class="card">Mulch & plant refresh in a drought-tolerant front yard.</div>
+        <div class="card">Brush clearing and trail creation on rural property.</div>
+        <div class="card">Decomposed granite hiking trail construction through wooded land.</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Tell us about your project..."></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Outdoor Works. Serving your outdoor needs with pride.</p>
+  </footer>
+</body>
+</html>
